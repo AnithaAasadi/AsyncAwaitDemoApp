@@ -32,19 +32,19 @@ class Program
     static async Task ShowWithAwait()
     {
         var name = await GetNameAsync();
-        Console.WriteLine($"[{Time()}] 👩‍💻 Name received (await): {name}");
+        Console.WriteLine($"[{Time()}] Name received (await): {name}");
     }
 
     static void ShowWithoutAwait()
     {
         var task = GetNameAsync();
-        Console.WriteLine($"[{Time()}] 👀 Not waiting for GetNameAsync()");
+        Console.WriteLine($"[{Time()}] Not waiting for GetNameAsync()");
     }
 
     static void ShowWithResult()
     {
         var name = GetNameAsync().Result;
-        Console.WriteLine($"[{Time()}] ⚠️ Name received (.Result): {name}");
+        Console.WriteLine($"[{Time()}]  Name received (.Result): {name}");
     }
 
     static string Time() => DateTime.Now.ToString("HH:mm:ss.fff");
