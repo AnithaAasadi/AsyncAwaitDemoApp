@@ -23,9 +23,9 @@ class Program
 
     static async Task<string> GetNameAsync()
     {
-        Console.WriteLine($"[{Time()}] ⏳ GetNameAsync() started");
+        Console.WriteLine($"[{Time()}]  GetNameAsync() started");
         await Task.Delay(3000);
-        Console.WriteLine($"[{Time()}] ✅ GetNameAsync() finished");
+        Console.WriteLine($"[{Time()}]  GetNameAsync() finished");
         return "Anitha";
     }
 
